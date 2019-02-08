@@ -1,0 +1,25 @@
+{
+  "sort" : [
+      {"grades.score" : {"order" : "desc"}}
+   ],
+
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "borough": "Manhattan" 
+          }
+        },
+        {
+          "match": {
+            "cuisine": "Italian" 
+          }
+        }
+      ]             
+ }    
+ },
+ "size" : 1
+}                       
+  }        
+}

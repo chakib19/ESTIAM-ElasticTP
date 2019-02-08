@@ -1,0 +1,8 @@
+{
+    "aggs" : {
+        "genres" : {
+            "terms" : { "field" : "borough" }
+        }
+    }
+
+}
